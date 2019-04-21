@@ -1,9 +1,8 @@
 def my_collect(array)
-  i=0
   new_array = []
-  while i < array.size
-  yield new_array << array[i]
-  i+=1
+  array.each do |x|
+  yield x
+  new_array << array[x]
   end
   new_array
 end
