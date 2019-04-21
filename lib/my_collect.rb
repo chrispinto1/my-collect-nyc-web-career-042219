@@ -4,6 +4,6 @@ def my_collect(array)
   yield x
   new_array << x
   end
-  new_array
+  return new_array
 end
 
